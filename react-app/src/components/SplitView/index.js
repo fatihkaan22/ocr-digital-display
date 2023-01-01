@@ -11,14 +11,18 @@ const SplitView = () => {
     <div>
       <SplitPane
         split="vertical"
-        defaultSize={parseInt(localStorage.getItem('splitPosVertical'), 10)}
+        defaultSize={
+          parseInt(localStorage.getItem('splitPosVertical'), 10) || 900
+        }
         onChange={(size) => localStorage.setItem('splitPosVertical', size)}
       >
         <LeftSplit />
         {/* <ImageAnnotation /> */}
         <SplitPane
           split="horizontal"
-          defaultSize={parseInt(localStorage.getItem('splitPosHorizontal'), 10)}
+          defaultSize={
+            parseInt(localStorage.getItem('splitPosHorizontal'), 10) || 500
+          }
           onChange={(size) => localStorage.setItem('splitPosHorizontal', size)}
         >
           {/* <Annotations /> */}
