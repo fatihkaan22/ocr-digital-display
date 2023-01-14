@@ -45,6 +45,7 @@ def load_image_into_numpy_array(path):
   return pipe(
       path,
       Image.open,
+      lambda x: x.convert('RGB'),
       np.array,
   )
 
@@ -131,7 +132,8 @@ async def detect_from_url(url: str = Form()):
           valmap(lambda x: x[0].numpy().tolist()),
       )
       return {"detections": result}
-    except:
+    except Exception as e:
+      print(e.message, e.args)
       return {"message": "error"}
 
 @app.post("/files/")
