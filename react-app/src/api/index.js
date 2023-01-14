@@ -1,19 +1,19 @@
 import axios from 'axios';
 
-let API = '';
+let API = 'https://ocr.fatihkaan.dev';
 
-const getProjectConfig = () => {
-  axios
-    .get(
-      'https://server-36196-default-rtdb.firebaseio.com/projects/ocr-digital-display.json'
-    )
-    .then((res) => res.data)
-    .then((config) => {
-      API = config.endpoint;
-    });
-};
-
-getProjectConfig();
+// const getProjectConfig = () => {
+//   axios
+//     .get(
+//       'https://server-36196-default-rtdb.firebaseio.com/projects/ocr-digital-display.json'
+//     )
+//     .then((res) => res.data)
+//     .then((config) => {
+//       API = config.endpoint;
+//     });
+// };
+// 
+// getProjectConfig();
 
 export const detectFromUrl = (url) => {
   const data = new FormData();
