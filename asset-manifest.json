@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ocr-digital-display/static/css/main.eb44d879.css",
-    "main.js": "/ocr-digital-display/static/js/main.3afca42a.js",
+    "main.js": "/ocr-digital-display/static/js/main.264c7b91.js",
     "index.html": "/ocr-digital-display/index.html",
     "main.eb44d879.css.map": "/ocr-digital-display/static/css/main.eb44d879.css.map",
-    "main.3afca42a.js.map": "/ocr-digital-display/static/js/main.3afca42a.js.map"
+    "main.264c7b91.js.map": "/ocr-digital-display/static/js/main.264c7b91.js.map"
   },
   "entrypoints": [
     "static/css/main.eb44d879.css",
-    "static/js/main.3afca42a.js"
+    "static/js/main.264c7b91.js"
   ]
 }
