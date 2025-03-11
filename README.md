@@ -1,3 +1,3 @@
 # OCR from Digital Display
 
-[📄 Download Thesis (PDF)](report.pdf)
+[📄 Thesis Paper (PDF)](report.pdf)
